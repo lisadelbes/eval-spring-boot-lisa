@@ -1,5 +1,5 @@
 
-package com.example.evalspring.model;
+package com.adrar.evalspring.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
@@ -8,7 +8,6 @@ import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
 @Entity
-@Table(name="produit")
 @Data
 public class Produit {
 
