@@ -8,6 +8,7 @@ import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
 @Entity
+@Table(name="produit")
 @Data
 public class Produit {
 
@@ -24,4 +25,8 @@ public class Produit {
     @NotEmpty(message = "Attentinon, le champ du prix du produit est obligatoire.")
     @Positive(message = "Le prix du produit doit être supérieur à 0€.")
     private Double prix;
+
+    @ManyToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "categorie_id")
+    private Categorie categorie;
 }
