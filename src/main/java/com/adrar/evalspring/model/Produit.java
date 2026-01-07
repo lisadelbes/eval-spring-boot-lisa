@@ -17,12 +17,12 @@ public class Produit {
     private Integer id;
 
     @Column(nullable = false)
-    @NotEmpty(message = "Le champ du nom du produit est obligatoire.")
+    @NotEmpty(message = "Attention, le champ du nom du produit est obligatoire.")
     @Length(min = 3, message = "Le nom du produit doit faire plus de 2 caractères.")
     private String nom;
 
     @Column(nullable = false)
-    @NotEmpty(message = "Le champ du prix du produit est obligatoire.")
+    @NotEmpty(message = "Attentinon, le champ du prix du produit est obligatoire.")
     @Positive(message = "Le prix du produit doit être supérieur à 0€.")
     private Double prix;
 }
