@@ -26,4 +26,18 @@ public class ProduitController {
     {
         return  produitService.getAllProduits();
     }
+
+    @GetMapping("/produit/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Optional<Produit> afficherProduit(@PathVariable Integer id)
+    {
+        return produitService.getProduitById(id);
+    }
+
+    @PostMapping("/produit")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Produit ajouterProduit(@RequestBody Produit produit)
+    {
+        return produitService.addProduit(produit);
+    }
 }
