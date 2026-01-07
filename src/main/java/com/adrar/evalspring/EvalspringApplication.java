@@ -1,4 +1,4 @@
-package com.example.evalspring;
+package com.adrar.evalspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

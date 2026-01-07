@@ -1,4 +1,4 @@
-package com.example.evalspring;
+package com.adrar.evalspring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
